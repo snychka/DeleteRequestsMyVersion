@@ -56,7 +56,7 @@ app.post('/blocks',parserUrlencode, function(request,response){
 });
 
 
-app.delete('blocks/:name', function(request,resposnse){
+app.delete('/blocks/:name', function(request,response){
 	console.log('entrou');
 	delete blocks[request.blockName];
 	//usamos a função sendStatus 200 para OK, quando não queremos devolver HTML, isto porque alguns clientes não respondem bem a respostas vazias, como o jquery.
