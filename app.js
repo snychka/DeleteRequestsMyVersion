@@ -1,10 +1,10 @@
 var express = require('express');
 var app = express();
-var cors = require('cors');
+//var cors = require('cors');
 
 app.use(express.static('public'));
 //por uma questão de segurança temos que chamar a biblioteca cors
-app.use(cors());
+//app.use(cors());
 
 //PRIMEIRO CHAMAMOS O MIDDLEWARE A QUE CHAMAMOS 'bodyParser'.
 var bodyParser = require('body-parser');
